@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Lesson 6 Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 6 Notes
+    April 4, 2023
+    -->
+    <style>
+        body{
+            width: 750px;
+            margin: 0 auto;
+            padding-bottom: 3%;
+        }
+        h1{
+            text-align: center;
+            padding-top:3%;
+        }
+    </style>
+</head>
+
+<body> 
+    <h1> Lesson 6 Notes </h1>
+    <hr>
+    <h2>Lesson 12: Creating Layouts Using Modern CSS Techniques</h2>
+    <p> This lesson taught us the three main layouts— fixed, liquid, and hybrid (combination of fixed and liquid). Before deciding on a layout, it is important to determine the target size of the container of your website, making sure your pages are made for the smallest devices first. While both fixed and liquid layouts have its benefits and set-backs, we learned the most flexible approach would be to incorporate a little of both. </p>
+    <p>First, we learned that fixed layouts set a specific width to a master element that holds all the content. This can be a great solution when you know the exact size of the screens you will target. However, since most people browse the web on different sized devices, liquid layouts might sound more appealing. This type of layout scales to different window sizes by taking up a percentage of a page’s width. This option requires a lot of testing, however, which is why a hybrid layout is probably better. A hybrid layout uses fixed width content as anchor elements (such as a left side navigation) and other liquid layouts around it. We also learned a very helpful property (min-width and max-width) to create rules so that our pages don’t break when the window is too large or small and the content scales properly. </p>
+    <p>Finally, this lesson covered three modern CSS layout techniques (CSS table, CSS flexible box layout, and CSS grid layout) to display elements in a more flexible and accessible way. <strong>The flexible Box Layout is a layout that allows you to position elements that display on a line in a container.</strong>The cool thing about this is that the items in the flex box will expand to fill free space or shrink them when there is limited space. <strong>The CSS grid layout is another type of layout that allows you to format elements in a table-like structure via CSS.</strong> To do so, you first define a container element then use properties to define columns and rows. Similar to HTML tables, but without the accessibility issues.</p>
+    <h3>What You'll Learn in This Lesson:</h3>
+    <ul>
+        <li>How fixed layouts work</li>
+        <li>How liquid layouts work</li>
+        <li>How to create a fixed/liquid hybrid layout</li>
+        <li>How to create CSS flexible box layouts</li>
+        <li>How to use CSS grid layouts</li>
+    </ul>
+    <hr>
+    <h2>Lesson 13: Taking Control of Backgrounds and Borders</h2>
+    <p>This lesson expanded on our knowledge of background and how to layer them on top of one another, add borders and customize borders to specific sides of an element. Combining both border and images allows us to use images as borders and the values that allow us to customize the image width in the border as well as how the image is repeated along the border. We also learned how to clip the border image and create curved corners using the border-radius property.</p>
+    <p>This lesson also covered how to create interesting effects using gradients. Whether we choose to use radial or linear gradients, CSS allows us to define the colors, the direction, and the size of the gradient using the radial-gradient or linear-gradient properties. These gradients can also be applied to backgrounds. To alternate background colors, we learned about zebra-stripe tables, which allow us to create formulas for customizing certain elements in a specific order, such as the fifth table element in a row or selecting only odd-numbered elements. This is extremely useful as we add more data or elements to our tables without having to manually change the styles. Finally, we learned the difference between outlines and borders. Specifically how outlines do not take up space and are usually used to render outlines when elements are in the :focus state. This is very useful for accessibility purposes. </p>
+    <h3>What You'll Learn in This Lesson:</h3>
+    <ul>
+        <li>How to layer backgrounds</li>
+        <li>How to use gradients as backgrounds</li>
+        <li>How to use CSS properties to create “zebra-stripe” tables automatically</li>
+        <li>How to create rounded corners on elements</li>
+        <li>How to use images as borders</li>
+        <li>How outlines are different from borders</li>
+    </ul>
+    <hr>
+    <h2>Lesson 14: Using CSS Transformations and Transitions</h2>
+    <p>This lesson covered how to create simple animation to objects on your website. We learned how to change simple objects on a 2D axis using rotate, scale, translate, and skew functions but also more complex transformations on a 3D axis can be accomplished. One thing to note is that the transformation will apply to the contents of the element that is being changed. </p>
+    <p>To enhance the changes, we learned about timing and how to use transition-delay, transition-duration, and transition-timing-duration properties to customize the amount of time it takes for an object to “move.” Finally, the lesson covered how to use JavaScript to create more nuanced animations, especially for events that are not covered by CSS pseudo-elements (like a button click). </p>
+    <h3>What You'll Learn in This Lesson:</h3>
+    <ul>
+        <li>How to transform elements by rotating, scaling, moving, and tilting</li>
+        <li>How to work with transformations in three dimensions</li>
+        <li>How to apply multiple transformations to one element</li>
+        <li>How to do simple animations with the transition property</li>
+    </ul>
+    <hr>
+    <h2>Lesson 15: Animating with CSS and the Canvas</h2>
+    <p>This lesson showed us how to create animations for our website through CSS and JavaScript. With CSS, we first need to define @keyframes and applying the “animation” property to specify its movement. From here, we learned how to adjust the timing, make it loop, and define the acceleration. We ended this section by learning how to make a ball bounce.</p>
+    <p>The second part of this lesson covered the HTML “canvas” element which allows us to draw shapes, lines, add images, and animate the images. Using JavaScipt to animate is a bit more complicated than CSS, but allows for more capabilities, such as defining the movements in seconds, adding multiple control points and smoothly reverse your animation. We concluded the lesson by learning how to create a sprite animation of a photo of a dog. Overall, the tools we learned in this lesson require a lot of practice, but can ultimately enhance our websites in a way that is unique and fun. </p>
+    <h3>What You'll Learn in This Lesson:</h3>
+    <ul>
+        <li>How to generate a CSS animation</li>
+        <li>How CSS animations are different from transitions and how they are similar</li>
+        <li>Creating keyframes to hold and control animations</li>
+        <li>Using the HTML5 &#60;canvas&#62; element for self-contained animations</li>
+    </ul>
+    <hr>
+</body>
+
+</html>
