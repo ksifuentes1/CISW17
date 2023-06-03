@@ -1,0 +1,116 @@
+Karla Sifuentes
+Lesson 3 Notes
+March 10, 2023
+
+Lesson 4 covered the basics of JavaScript language. This allows for more complex webpages that can interact with 
+the user, as opposed to HTML and CSS which display and customize only the static pieces of a website. A JavaScript
+command is interpreted by the browser by reading the text in the <script> </script> tags from top to bottom and executes 
+them, like a film script. We learned a little bit about the history of JavaScript and the many capabilities to enrich 
+your webpages. For example, it can be used to display messages, validate forms, and even program complex games. 
+
+To use JavaScript, embedding the <script> tags near the end of the <body> tag, before the closing </body> tag is
+recommended. You can also link to a seperate, external javascript file, keeping as little files as possible so as not
+to require lots of work from your browser. Your JavaScript can also go in the body of the page, where it is displayed as 
+part of the HTML document and it can also go in the header of the page, although it should not be used to create output that 
+would interact with the <head> content. As always, it is important to test your code and the textbook showed a helpful way to
+check for errors in your code by using the tools embedded in your browser (such as 'Inspect' for Google Chrome).
+
+Leson 4: Understanding JavaScript
+What You'll Learn in This Lesson:
+    What web scripting is and what it’s good for
+        Scripting (or programming) language allows for interactive tasks
+        
+    How scripting and programming are different (and similar)
+        JavaScript- an interpreted language so the browser executes each line of script as it comes to it
+        Some programming languages must be compiled (translated) into machine code before execution
+        usually require a browser (interpreter) for complicated graphics to execute quickly
+        Interpreted languages are easier to write or change scripts
+
+    What JavaScript is and where it came from
+        JavaScript-developed in 1995 by Netscape Communications Corporation (Netscape web browser)
+        first web scripting language to be supported by browsers
+        originally called LiveScript, renamed javascript to indicate marketing relationship with Java language
+        What you can do with JavaScript:
+            display messages to the user as part of webpage
+            validate contents of form and make calculations
+            animate images or create images that change 
+            create ad banners that interact with the user
+            detect what browser is in use and perform accordingly
+            detect plug ins and notify is plug in is needed
+            modify webpage without requiring user to reload
+            display or interact with data from remote server
+
+    How to include JavaScript commands in a web page
+        use the <script></script> tags (tells browser to read text as script)
+        Four places you could use scripts
+            In the body of the page
+                best place to put script is inside <body> just before closing </body> so that it loads last
+            In the header of the page, between the <head> tags
+                scripts in the header should not be used to create output within the head section
+                scripts can be referred to by ther scripts 
+                <head> section often used for functions 
+            Within an HTML tag such as body or form tags:
+                Event handler- enables script to work with HTML elements
+                when using JavaScript in event handlers you don't need to use <script> tag
+            In a seperate file
+                .js extension
+                specify a file in the <script> tag:
+                    <scriptsrc="filename.js"> </script>
+                try to keep all scripts in as few files as you can
+
+    What JavaScript can do for your web pages
+        Improving Navigation
+        Validating Forms (correct format for zipcodes, numbers, etc.)
+        Special Effects
+        Remote Scripting (AJAX- Asynchronous JavaScript and XML)
+            scripts that get data froma server without loading a page
+            scripts that send data back to be saved
+        Displaying Time
+
+    Beginning and ending scripts
+        <script></script>
+
+    Formatting JavaScript statements
+        variable- container that can hold a value
+    How a script can display a result
+
+    Including a script within a web document
+
+    Testing a script in a browser
+
+    Modifying a script
+
+    Dealing with errors in scripts
+        Use Inspect to check for errors in code
+    Moving scripts into separate files
+
+Lesson 5 was about checking your code for issues, aka bugs so that your webpages look and perform the way you envision them to. You
+can either use a validator website, through which you import a file or link, and it can help you not only find syntax errors, but also 
+offer suggestions for fixing these mistakes. However, a validator will not catch everything, especially when your code is grammatically 
+correct, but not performing in the way you'd like. This is where it can be helpful to use Developer Tools from your browser. 
+
+To use Developer tools, first open the code in a browser and Inspect (if you are using Google Chrome). This allows you to see the code 
+behind your webpage. From there, you are able to inspect the components of the code, clicking and opening tabs to make sure it reads correctly. 
+If something looks off, you can go back to your source file and double check. Usually, this is where the error is. If you want to see what small
+adjustments in your code would look like, developer tools allows you to manipulate the code and renders it right before your eyes. It can be helpful
+to visualize right there on the browser. Overall, this lesson is extremely important, especially as you are just starting out and because we are all
+bound to make mistakes. Luckily, there is always a way to fix it.
+
+Lesson 5: Validating and Debugging Your Code
+What You'll Learn in This Lesson:
+    How to validate your HTML and CSS
+        Validating- a way to test your pages with a special application that searches for errors and makes
+        sure the pages adhere to current HTML/CSS standards
+        https://validator.w3.org/
+        Validation assists you in finding and fixing problems in the code
+
+    How to use Developer Tools to debug HTML and CSS
+        Using Developer Tools opens an additional window panel with the HTML code
+        Validator will quickly identify pure syntax issues, but usefule to know DOM rendering
+        Developer tools can also be used for debugging CSS and JavaScript too!
+            
+    How to use the JavaScript Console to debug JavaScript
+        Breakpoints-specify where you would like to stop JS from executing    
+        Step Over- code advances one line. If breakpoint is encountered when stepping over, browser stops executing
+        Step Into- code advances one line. If the line is to execute another function, you are taken to the first line of code
+        Step Out- current function finished executing and you are taken to next line of code in the calling function

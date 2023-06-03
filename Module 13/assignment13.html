@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <title>Create a Form</title>
+    <!--
+    Karla Sifuentes
+    Assignment 13: Create a Form
+    May 20, 2023
+    -->
+    <style>
+        body{
+        margin:0 auto;
+        background-color:white; 
+        color:#0f0f0f;  
+        font-family:helvetica, sans-serif; 
+        font-size:medium;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        }
+        @media screen and (max-width:750px){
+            body{
+                font-size:small;
+            }
+            .w3-card{
+                width: 410px;
+                padding:15px;
+            }
+        }
+        @media screen and (min-width:749px){
+            .w3-card{
+                width: 505px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body> 
+    <form class="w3-card w3-light-grey">
+        <label for="first_name">First Name:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="first_name" value="Karla"> <br>
+        
+        <label for="last_name">Last Name:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="last_name" value="Sifuentes"> <br>
+        
+        <label for="message">Message:</label>
+        <input class="w3-input w3-border w3-round" type="text" id="message" value="I love Mt. Sac" size="50"><br>
+        
+        <p>I love to code in:</p>
+        <input type="checkbox" id="HTML" checked value="HTML"> 
+        <label for="HTML">HTML</label><br>
+        
+        <input type="checkbox" id="CSS" checked value="CSS"> 
+        <label for="CSS">CSS</label> <br>
+
+        <input type="checkbox" id="JavaScript" checked value="JavaScript"> 
+        <label for="JavaScript">JavaScript</label> <br>
+    </form>
+</body>
+
+</html>

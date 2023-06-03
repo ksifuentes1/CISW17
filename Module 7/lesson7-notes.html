@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Responsive Web Design Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 7 Notes
+    April 9, 2023
+    -->
+    <style>
+        body {
+            font-size: 18px;
+            line-height:1.5em;
+            max-width:85%;
+            margin: 0 auto;
+            width: 70%;
+            background-color:#f3f3f3;
+            color:slategrey;
+            font-family:helvetica, sans-serif;
+            padding: 50px;
+        }
+        h1,h2{
+            font-weight:400;
+        }
+        @media screen and (min-width:750px) {
+            h1{font-size:1.5em;}
+            h2{font-size:1.25em;}
+        }
+        @media screen and (max-width:749px){
+            body{line-height:1.2em;}
+            h1{font-size:1.25em;}
+            h2{font-size:1.1em;}
+        }
+    </style>
+</head>
+
+<body> 
+    <h1> Responsive Web Design Notes </h1>
+    <h2>Lesson 16: Understanding the Importance of Responsive Web Design</h2>
+    <p>This lesson was all about creating responsive web pages that work across all browsers and most devices. By designing a site intended for mobile devices first, and making sure it scales to larger screens can ensure that your website is accessible to all, while providing a pleasant user experience. Not only that, but responsive web design streamlines the web development process because only one version of the code is needed. It forces you to keep organized, by emphasizing the use of clean code, separating style sheets, and using semantic code for the next time you need to go back and edit. </p>
+    <p>We were also introduced to progressive enhancement, which involves starting out with the most important information as a foundation and building its complexity so that the most basic browsers will at least see the basic information. The lesson reiterated the basic tags needed for a functioning webpage and recommended listing style properties with more basic features first, in case the browser can’t interpret the modern features later down the style sheet. Finally, we learned the importance of validating your code so that you ensure that all your work can be seen and experienced correctly!</p>
+    <p><strong>What You'll Learn in this Lesson:</strong><p>
+    <ul>
+        <li>What is responsive web design (RWD)</li>
+        <li>Why we need RWD</li>
+        <li>What is progressive enhancement</li>
+        <li>How to write HTML that's RWD ready</li>
+    </ul>
+    <hr>
+    <h2>Lesson 17: Designing for Mobile Devices</h2>
+    <p>This lesson covered mobile first design as a way to approach your web building process. It taught us how to design effective interfaces for mobile devices first by avoiding flash, configuring the viewport, creating flexible width designs and functional/visible elements so that our sites are not penalized by search engines. The lesson explained why mobile first is so important. More and more users are accessing websites via smaller devices which forces developers to streamline their content and think about what is most important to the mobile user. </p>
+    <p>To create elements, such as tables and elements, that are difficult to fully experience on a mobile device, the lesson covered some ways of creating responsive tables by using css to resize the cells, rearrange the table, and remove or hide content. Similarly, images can be set to flexible widths with css properties or within the html img tag. The lesson helped us determine when we might need to use entirely different images on mobile. Finally, we covered how to create responsive layouts without media queries by setting css columns. This allows you to generate a single column when the browser is small. Overall, responsive web design is very important, yet difficult to do. By focusing on mobile customers first and giving them the basic information, we ensure that we meet the needs of the majority of our website visitors. </p>
+    <p><strong>What You'll Learn in this Lesson:</strong></p>
+    <ul>
+        <li>How mobile design differs from standard web design</li>
+        <li>What the Mobile First design philosophy is</li>
+        <li>How Mobile First is important to RWD</li>
+        <li>How to build responsive tables and images for mobile devices</li>
+        <li>How to use CSS columns to create responsive designs without media queries</li>
+    </ul>
+    <hr>
+    <h2>Lesson 18: Using Media Queries and Breakpoints</h2>
+    <p>This lesson was all about media queries and how to use them to further build on responsive web design. We learned that most rwd have at least one breakpoint, which defines where the design adjusts to accomodate different media types. By using media queries, which are logical expressions that define rules for what styles to use on specific device properties, we can better control how our sites look and function on different devices, browser sizes, and screen densities. </p>
+    <p>More specifically, this lesson taught us how to define breakpoints using media queries and best practices for queries. For example, when creating a style sheet, we should start with the most basic, unchanging styles first, then add specific styles for all devices, and finally the media queries to define styles for medium and larger devices. This ensures that we target mobile devices first and takes advantage of the cascading component of css. Finally, the lesson covered how to find the best breakpoints for your website, making sure that you do so when the page starts to break rather than creating a breakpoint for every possible device out there. </p>
+    <p><strong>What You'll Learn in this Lesson:</strong></p>
+    <ul>
+        <li>How to write a CSS media query</li>
+        <li>How to use different media types</li>
+        <li>How to create media query expressions</li>
+        <li>Understanding logical keywords in your queries</li>
+        <li>What CSS breakpoints are</li>
+        <li>How to define breakpoints</li>
+        <li>How to find the best breakpoints for your website</li>
+    </ul>
+    <hr>
+</body>
+
+</html>

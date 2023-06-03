@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Lesson 9 Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 9 Notes
+    April 22, 2023
+    -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-size: 18px;
+            line-height:1.5em;
+            max-width:85%;
+            margin: 0 auto;
+            width: 70%;
+            background-color:#f3f3f3;
+            font-family:helvetica, sans-serif;
+            padding: 50px;
+        }
+        h1,h2,h3{
+            font-weight:400 px;
+        }
+        @media screen and (min-width:750px) {
+            h1{font-size:1.5em;}
+            h2{font-size:1.25em;}
+        }
+        @media screen and (max-width:749px){
+            body{line-height:1.2em;}
+            h1{font-size:1.25em;}
+            h2{font-size:1.1em;}
+        }
+    </style>
+</head>
+
+<body> 
+    <h1 class="w3-container w3-deep-orange"> Lesson 9 Notes </h1>
+    <h2 class="w3-container w3-amber">Lesson 19: Undestanding Dynamic Websites and HTML5 Applications</h2>
+    <p>This lesson taught us that there are two types of scripting: client and server-side scripting. The type that we are focusing on in this lesson is client-side, which includes adding a bit of JavaScript to our sites to make them more interactive. As an example, the lesson showed us how to generate a random quote with JavaScript and later taught us how to make this code unobtrusive. It emphasized the importance of unobtrusive script so that all users could potentially access the information, even if their browser (or device) doesn’t support JavaScript.</p>
+    <p>The lesson also introduced the concept of the Document Object Model, which is a framework for referring to elements and their associated objects. This came very handy when we used the DOM to make the Quotable Quotes page unobtrusive, by calling the quote element with its id to HTML first, before using JavaScript to generate the quote. We also learned how the DOM helped us change the “featured” image in a rotation of smaller images below it by filling the source of the image with the smaller images when writing the specifying the event “onclick.” Finally, the lesson probed us to start thinking about how the foundations learned here could be used to build more complex HTML applications, especially when we start to think about how to use server-side scripting for larger projects. </p>
+    <p><strong>What You'll Learn in this Lesson:</strong><p>
+    <ul class="w3-ul w3-border">
+        <li>How to conceptualize different types of dynamic content</li>
+        <li>How to include JavaScript in your HTML</li>
+        <li>How to display randomized text with JavaScript</li>
+        <li>How to change images by using JavaScript and user events</li>
+        <li>How to begin thinking ahead to putting all the pieces together to create HTML5 applications</li>
+    </ul>
+    <section>
+    <p><strong>How to write comments in JavaScript:</strong></p>
+    <P> Use two forward slashes // to comment code in JavaScript. Anything after the slashes will be only visible on the back-end. </P>
+    </section>
+    <hr>
+    <h2 class="w3-container w3-amber">Lesson 20: Getting Started with JavaScript Programming</h2>
+    <p>This lesson dove a little deeper into JavaScript and its various components. We learned some basic concepts such as statements, functions, variables, and objects. JavaScript also supports conditional statements, loops, and events. We learned the order that scripts are executed and a few rules for JavaScript syntax. As we experiment and write code, the lesson emphasized the value of comments to help us understand the script when we need to go back to it or when reading someone else’s code.</p>
+    <p>Like HTML and CSS, JavaScript can be very helpful if we follow some best practices such as separating it into external files, using comments to explain our code, and being as general as possible so that all browsers can access JavaScript. We also learned the importance of keeping JavaScript optional so that anyone should be able to access our site (aka progressive enhancement). Finally,  this lesson covered JSON, a common way of structuring and storing information used by JavaScript. Because JSON is very simple, easy to read, and largely self-documenting, it has become a common way to interchange data. </p>
+    <p><strong>What You'll Learn in this Lesson:</strong></p>
+    <ul class="w3-ul w3-border">
+        <li>How and why to organize scripts using functions</li>
+        <li>What objects are and how JavaScript uses them</li>
+        <li>How JavaScript can respond to events</li>
+        <li>How and when to use conditional statements and loops</li>
+        <li>How browsers execute scripts in the proper order</li>
+        <li>Basic syntax rules for avoiding JavaScript errors</li>
+        <li>What JSON is and how it can be used</li>
+    </ul>
+    <section>
+        <h3 class="w3-container w3-khaki">Best Practices for JavaScript</h3>
+        <ul class="w3-ul w3-border">
+            <li>Use comments liberally</li>
+            <li>Use a semicolon at the end of each statement and use only one statement per line</li>
+            <li>Use external JavaScript files whenever possible</li>
+            <li>Avoid being browser specific</li>
+            <li>Keep JavaScript optional</li>
+        </ul>
+    </section>
+    <hr>
+    <h2 class="w3-container w3-amber">Lesson 21: Working with the Document Object Model (DOM)</h2>
+    <p>This lesson uncovered more about the Document Object Model and how it structures a web browser and the documents within it. We learned that the window is the parent object for all objects and the child objects can include the document, location, history, and navigator objects. The lesson dove deeper into properties of each that help us name and refer to these objects in our scripts. </p>
+    <p>Then, this lesson taught us a bit more about the DOM structure. Although we were introduced to the DOM in the past, this lesson helped contextualized the DOM by showing us how it can represent the structure in an HTML document. We learned that each container or element in a document is called a node in the DOM and the relationship between parents, children, and siblings in the structure. The lesson covered a few basic node properties, node relationship properties, and document and node methods to customize and create dynamic sites. The lesson concluded with a demonstration of how to create and show/hide layers, move layers around, and modify/add the text in a page all using concepts and commands learned. </p>
+    <p><strong>What You'll Learn in this Lesson:</strong></p>
+    <ul class="w3-ul w3-border">
+        <li>How the W3C DOM standard makes dynamic pages easier to control</li>
+        <li>The basics of the standard DOM objects: window, document, history, and location</li>
+        <li>How to work with DOM nodes, parents, children, and siblings</li>
+        <li>How to access and use the properties of DOM nodes</li>
+        <li>How to access and use DOM node methods</li>
+        <li>How to control element positioning with JavaScript</li>
+        <li>How to hide and show elements with JavaScript</li>
+        <li>How to use JavaScript to add and modify text within a page</li>
+    </ul>
+    <section>
+        <p><strong>Properties for the Document object</strong></p>
+        <ul class="w3-ul w3-border">
+            <li>document.URL</li>
+            <li>document.title</li>
+            <li>docuemnt.referrer</li>
+            <li>docuement.lastModified</li>
+            <li>docuemnt.cookie</li>
+            <li>docuemnt.images</li>
+        </ul>
+        <p><strong>Document Methods</strong></p>
+        <ul class="w3-ul w3-border">
+            <li>getElementByID(id)</li>
+            <li>getElementsByTagName(tag)</li>
+            <li>createTextNode(text)</li>
+            <li>createElement(tag)</li>
+        </ul>
+        <p><strong>Basic Node Properties</strong></p>
+        <ul class="w3-ul w3-border">
+            <li>nodeName</li>
+            <li>nodeType</li>
+            <li>nodeValue</li>
+            <li>innerHTML</li>
+        </ul>
+
+    </section>
+    <hr>
+    <section>
+        <p><strong>More Resources</strong></p>
+        <ul class="w3-ul w3-border">
+            <li><a href="https://app.nectir.io/group/mtsac/html-css-and-javascript" target="_blank">Private Nectir Channel</a></li>
+            <li><a href="https://mtsac.instructure.com/courses/122681/discussion_topics/1150510?module_item_id=4667596" target="_blank">Open Student Discussion Forum</a></li>
+            <li><a href="https://mtsac.instructure.com/courses/119823/discussion_topics/1014301?module_item_id=4089638" tagert="_blank">Office Hours</a></li>
+            <li><a href="mailto:sable.cantus@mtsac.edu"target="_blank">Professor Cantus's Email</a></li>
+            <li><a href="https://gist.github.com/ericelliott/d576f72441fc1b27dace/0cee592f8f8b7eae39c4b3851ae92b00463b67b9" target="_blank">Essential JavaScript Links</a></li>
+            <li><a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">JavaScript Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/jsref/default.asp" target="_blank">JavaScript and HTML DOM Reference</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body{
+    margin:0 auto;
+    max-width: 75%;
+    background-color: whitesmoke; 
+    color:#0f0f0f;  
+    font-family:helvetica, sans-serif; 
+    font-size:large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    h1{
+        text-align:center;
+    }
+    div{
+        text-align:center;
+    }
+    .w3-card{
+        padding:25px;
+    }

@@ -1,0 +1,98 @@
+Karla Sifuentes
+Lesson 2 Notes
+March 4, 2023
+
+Lesson 3: Understanding Cascading Style Sheets
+
+This lesson explained how to use style sheets to customize the appearance of your HTML pages. It is helpful to reference an external style sheet with rules that will apply to all specified elements in that page. However, another option is to include the style rules within an HTML page (within the head tag) but those rules can only be applied to that page. 
+
+There are lots of ways to customize your page using style properties, which generally fall into two major categories; layout properties and formatting properties. Both are used to visually customize the elements on the page. You can also use style classes to specify certain rules to different selectors (h1, p, a, etc.) if you want more control over specific visual effects on different elements under the same category. Style IDs are similar to style classes, but can only be used once within a page and use the # to distinguish them.
+
+What You'll Learn in the Lesson:
+How to create a basic style sheet
+    Style sheet- grouping of formatting instructions that control the appearance of several HTML pages at once
+    
+    CSS- Cascading Style Sheets (can be stored directly in HTML page or seperate style sheet file)
+    
+    Style Rule- formatting instruction that can be applied to an element on a web page 
+    
+    Internal Style Sheet- placed directly within a web page
+    
+    External Style Sheet- seperate document that is linked to a web page via a special tag
+    
+    Hierarchy- most specific styles override more general styles
+    
+    Element- a piece of information (content) in a web page
+    
+    Selector- used to identify tags on a page to which you apply styles (body, h1, p, img, a, etc)
+
+    Style Rules- describe how content within that tag should appear
+
+    Pt- point (72 points in an inch)
+
+    Fixed vs relative (rem and em) lenghts 
+
+    Semicolor (;) used to seperate style rules from each other
+
+    to link style sheet to HTML include <link> in <head>:
+    <link rel="stylesheet" href="styles.css">
+
+    Style Properties-
+        Layout Properties: properties that affect the posititioning of elements on a webpage (margins, padding, alignment)
+            Display property- describes how an element is displayed with respect to other elements (relative positioning)
+                1. block- the element is displayed on a new line
+                2. list-item- element is displayed on new line with a bullet
+                3. inline- element displayed inline with current paragraph
+                4. inline-block- element is displayed as block level element inline with surrounding block elements
+                5. none- element is not displayed; hidden
+
+                display:block;
+
+        Formatting Properties: properties that affect the visual display of elements in a website (font type, size, and color)
+            Border- visible boundary around an element with box
+                border-width, border-color, border-style, border-left, border-right, border-top, border-bottom, border
+                solid, double, dashed, dotted, groove, ridge, inset, outset, none, hidden
+                border-top-left-radius, border-bottom-right-radius, etc.
+            Color-
+                background-color
+                color- hexadecimal, rgb
+            Text alignment (only applies to the contents of block-level element)
+            Font-
+                font-family (use quotes if the typeface has multiple words)
+                font-size
+                font-style (normal, italic)
+                font-weight (normal, lighter, bold, bolder)
+            text-decoration- can turn off link underlining (none); underline, overline, line-through
+            text-align- aligns left right, center, or justify
+            padding- adds space around element
+
+
+How to use style classes
+    Style Class- custom set of formatting specifications that can be applied to any element in a web page
+        Style Property- specific style that you can assign a value (color, font-size, etc.)
+        Example: h1{font: 36 pt Coutier;}
+            h1- selector
+            font- style property
+            36 pt courier- value
+    To choose between two style classes use CLASS attribute
+        Ex: <h1 class="silly"> Heading 1 </h1>
+            h1.silly {font:36 pt comic sans;}
+            h1.serious {font: 36py arial;}
+    When referencing a style class, specify the class name in the class attribute of an element
+
+How to use style IDs
+    Style ID- custom set of formatting specifications that can be applied to only one element in a web page
+        use IDS across set of pages but only once within each page
+        Ex: <p id="title"> Title Goes Here </p>
+            p#title {font: 24pt Verdana}
+
+How to construct internal style sheets and inline styles
+    Enclose style sheet between <style> and </style>
+    Must appear in the <head>
+    <span> and </span> dummy tags specify a range of content to apply style to
+    <div> forces a line break, <span? doesn't>
+    Inline style Ex: 
+        <p style="color: green;">
+        This text is green but <span style="color:red;"> this text is red.</span>
+
+    Validate style sheet: https://jigsaw.w3.org/css-validator/

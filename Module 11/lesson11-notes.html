@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title> Lesson 11 Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 11 Notes
+    May 7, 2023
+    -->
+    <style>
+        body{
+        margin:0 auto;
+        background-color: whitesmoke; 
+        color:#0f0f0f;  
+        font-family:helvetica, sans-serif; 
+        font-size: medium;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+        main{
+            margin:0 auto;
+            max-width:900px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .w3-card{
+            width:300px;
+            padding: 15px;
+            position:relative;
+        }
+        .flex-container{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+        @media screen and (min-width:750px) {
+            h2{font-size:2em;}
+        }
+        @media screen and (max-width:749px){
+            body{line-height:1.2em;
+            }
+            main{margin:0 auto;
+                max-width:500px;
+            }
+            h2{
+            line-height:1em;}
+            }
+    </style>
+</head>
+
+<body> 
+    <h2 class="w3-center w3-container w3-blue">Controlling Flow with Conditions and Loops</h2>
+<main>
+    <p class="w3-container w3-light-blue">Summary:</p>
+    <ul>
+        <p>This lesson covered conditional statements in JavaScript, giving us more capabilities for customizing and interacting with our websites. The lesson covered topics that are starting to feel more like programming. For example, we learned how "if" statements work and what we can do with them. The lesson briefly covered the shorthand version of "if" statements which can be helpful when using a lot of these conditionals. Also, the switch statement, which isn’t required, can also be used to improve efficiency when working with multiple conditions. </p>
+        <p>Another type of conditional statement covered in this lesson is the "for" loop, which keeps track of how many times a loop has executed and stops when a certain number is reached. We learned types of "for" loops, such as the "while" loop, which continues to execute as long as the condition is true. The lesson also emphasized the power of an infinite loop and advised us not to use it because they can be difficult to spot and would likely generate some error after the browser runs out of memory. Finally, the lesson showed us how to use loops to work in an array and walked through an example of some code that prompts the user to enter a list of names, then prints them. </p>
+    </ul>
+    <p class="w3-container w3-light-blue">What You'll Learn in This Lesson</p>
+    <ul class="w3-ul w3-border">
+        <li class="w3-container w3-sand">How to test conditions with the <code>if</code> statement</li>
+        <li class="w3-container w3-sand">How to use comparison operators to compare values</li>
+        <li class="w3-container w3-sand">How to use logical operators to combine conditions</li>
+        <li class="w3-container w3-sand">How to use alternative conditions with <code>else</code> objects</li>
+        <li class="w3-container w3-sand">How to create expressions with conditional operators</li>
+        <li class="w3-container w3-sand">How to test for multiple conditions</li>
+        <li class="w3-container w3-sand">How to perform repeated statements with the <code>for</code> loop</li>
+        <li class="w3-container w3-sand">How to use <code>while</code> and <code>do...while</code> loops</li>
+        <li class="w3-container w3-sand">How to create infinite loops (and why you shouldn't)</li>
+        <li class="w3-container w3-sand">How to escape from loops and continue loops</li>
+        <li class="w3-container w3-sand">How to loop through an array's properties</li>
+    </ul>
+</main>
+    <h2 class="w3-center w3-container w3-blue">Responding to Events and Using Windows</h2>
+<main>
+    <p class="w3-container w3-light-blue">Summary:</p>
+    <ul>
+        <p>This chapter dove into more interactivity capabilities for JavaScript. More specifically, we learned how to create event handlers and invoke them in our code to make an object come to life. We learned that the best way to define events is by placing them in a JavaScript function so that you can turn them on and off as needed. In order to make your code unobtrusive, the lesson explained how to use the <code>addEventListener</code> function to listen for an event or object, then apply the action you want it to do. </p>
+        <p>By using the <code>event</code> object, you can discover more detailed information, such as which keys were pressed. However, most modern browsers automatically pass the <code>event</code> object to the event handler function so we don’t really need to define it. Nonetheless, this opens up a world of possibilities for the types of information you can source from an event. For example, this lesson covered how to detect mouse and keyboard actions.</p>
+        <p>We also learned more about the hierarchy of the <code>window</code> object and a few of its properties and methods to open, close, or resize a new window. Then, we moved on to timeouts to specify a script to “sleep” until a specified amount of time passes. Afterwards, the lesson outlined some of the ways we can display dialog boxes with the alert, confirm, or prompt methods. The lesson concluded with an example code of each. </p>
+    </ul>
+    <p class="w3-container w3-light-blue">What You'll Learn in This Lesson</p>
+    <ul class="w3-ul w3-border">
+        <li class="w3-container w3-sand">How event handlers work</li>
+        <li class="w3-container w3-sand">How event handlers relate to objects</li>
+        <li class="w3-container w3-sand">How to create an event handler</li>
+        <li class="w3-container w3-sand">How to detect mouse and keyboard actions</li>
+        <li class="w3-container w3-sand">How to use <code>onclick</code> to change the appearance of <code><div></code></li>
+        <li class="w3-container w3-sand">How to access and use the <code>window</code> object hierarchy with JavaScript</li>
+        <li class="w3-container w3-sand">How to delay a script's actions by using timeouts</li>
+        <li class="w3-container w3-sand">How to display alerts, confirmations, and prompts</li>
+    </ul>
+</main>
+<h2 class="w3-center w3-container w3-blue">More definitions</h2>
+<main>
+    <div class="flex-container">
+    <div class="w3-card">
+        <h3>Conditional Statements:</h3>
+            <p>A statement in JavaScript that consists of a condition and an action. It allows your scripts to behave differently based on the values or variables inputted.</p>
+    </div>
+    <div class="w3-card">
+        <h3>Using Multiple Conditional Statements:</h3>
+        <p>Here's an example of using multiple conditions with if and else statements:</p>
+        <code>if (hour_of_day < 10){
+
+            document.write("Good morning.");<br>
+            
+            }else if ((hour_of_day >= 14) && (hour_of_day <= 17)){<br>
+            
+            document.write("Good afternoon.");<br>
+            
+            }else if (hour_of_day >= 17){<br>
+            
+            document.write("Good evening.");<br>
+            
+            }else {<br>
+            
+            document.write("Good day.");<br>
+            
+            }<br>
+        </code>
+    </div>
+    <div class="w3-card">
+        <h3>Conditional Operators:</h3>
+        <p>Here are some possible conditional operators:</p>
+        <ul>
+            <li>==—Is equal to</li>
+            <li>!=—Is not equal to</li>
+            <li><—Is less than</li>
+            <li>>—Is greater than</li>
+            <li>>=—Is greater than or equal to</li>
+            <li><=—Is less than or equal to</li>
+        </ul>
+    </div>
+    <div class="w3-card">
+        <h3>Loops:</h3>
+        <p>You can use loops to keep track of how many times a statement runs and execute a function when the specified limit is reached. For example, use loops to search for values in a large data set repetitively.</p>
+    </div>
+    <div class="w3-card">
+        <h3>Event Handlers:</h3> 
+        <p>Event handlers are scripts that you create and use to detect and respond to an event.</p>
+    </div>
+    <div class="w3-card">
+        <h3>"Click" Handlers:</h3>
+        <p>To detect a click, you can use mouseup and mousedown properties for the “click” handler.</p>
+    </div>
+    <div class="w3-card">
+        <h3>Keystrokes:</h3>
+        <p>To make your page listen for keystrokes, use the <code>keypress</code> event handler. Use the <code>event.which</code> property and the <code> from-CharCode</code> string method to store the value of the key and tell you which key was pressed.</p>
+        <br>
+        <p>For example:</p>
+        <code>
+            function displayKey(e) {<br>
+
+                // which key was pressed?<br>
+                
+                var keycode=e.which;<br>
+                
+                character = String.fromCharCode(keycode);
+                
+                // find the object for the destination paragraph<br>
+                
+                var keys_paragraph = document.getElementById('keys');<br>
+                
+                // add the character to the paragraph<br>
+                
+                keys_paragraph.innerHTML += character;<br>
+                
+                }<br>
+        </code>
+    </div>
+    <div class="w3-card">
+        <h3>The <code>window</code> object:</h3> 
+        <p>The <code>window</code> object has the following properties:</p>
+        <ul>
+            <li>window.closed</li>
+            <li>window.name</li>
+            <li>window.opener</li>
+            <li>window.outerHeight and window.outerWidth</li>
+            <li>window.screen</li>
+            <li>window.self</li>
+        </ul>
+    </div>
+    </div>
+
+</main>
+
+</body>
+
+</html>

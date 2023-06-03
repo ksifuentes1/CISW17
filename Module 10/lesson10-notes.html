@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title> Lesson 10 Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 10 Notes
+    April 30, 2023
+    -->
+    <style>
+        body{
+        margin:0 auto;
+        background-color: whitesmoke; 
+        color:#0f0f0f;  
+        font-family:helvetica, sans-serif; 
+        font-size: medium;
+        }
+        main{
+            margin:0 auto;
+            max-width:750px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        @media screen and (min-width:750px) {
+            h1{font-size:2em;}
+        }
+        @media screen and (max-width:749px){
+            body{line-height:1.2em;
+            }
+            main{margin:0 auto;
+                max-width:500px;
+            }
+            h1{
+            line-height:1em;}
+        }
+    </style>
+</head>
+
+<body> 
+    <h1 class="w3-center w3-container w3-khaki">Using JavaScript Variables, Strings, and Arrays</h1>
+<main>
+    <p class="w3-container w3-light-green">Summary:</p>
+    <ul>
+    <p>This lesson dove deeper into JavaScript, explaining how variables, functions, methods, strings, arrays, and objects work. First, we learned how to declare and use variables, assigning values to them, and how JavaScript reads the values in a prescribed order of operations. Within a variable, you can have string objects which are groups of characters or text surrounded by quotation marks. There are a few handy tools to work with strings, such as concatenating, calculating the length of a string or converting strings to all caps. Also, we learned how to find specific items in a string by using indexOf method. </p>
+    <p>Besides variables and strings, this lesson covered arrays, which are groups of items (numeric or not) treated as a single unit. An array can also include string of text which can be sorted, split, joined, or counted. For grouping various JavaScript statements, we were taught how to define functions with the correct syntax and then how to call the function so that it executes. Then, we learned more about objects, which can store several properties, compared to a variable that can only store one piece of information. This came in handy when we learned how to develop a contact card with a person’s name, email, address, and phone number.</p>
+    <p>Finally, the lesson covered a few numerical capabilities by using the Math object’s methods. For example, we can round numbers and generate random numbers for a variety of purposes. JavaScript also has a Date object that lets us call and view specific dates and times, across several time zones. All are very useful and necessary tools to know when working with JavaScript. </p>
+    </ul>
+    <p class="w3-container w3-light-green">What You'll Learn in This Lesson</p>
+    <ul>
+        <li class="w3-container w3-lime">How to name, declare, and assign variables</li>
+            <ul class="w3-ul w3-border">
+            <li>Variable names can include letters of the alphabet, both upper- and lowercase. They can also include the digits 0–9 and the underscore (_) character.</li>
+            <li>Variable names cannot include spaces or any other punctuation characters.</li>
+            <li>The first character of the variable name must be either a letter or an underscore.</li>
+            <li>Variable names are case sensitive; for example, <code>totalnum</code>, <code>Totalnum</code>, and <code>TotalNum</code> are interpreted as separate variable names.</li>
+            <li>There is no official limit on the length of a variable name, but it must fit on one line. Frankly, if your variable names are longer than that—or even longer than 25 or so characters, you might consider a different naming convention.</li>
+            </ul>
+        <li class="w3-container w3-lime">How to choose whether to use local or global variables</li>
+            <ul class="w3-ul w3-border">
+                <li>Defining Global and Local Variables</li>
+                <ul>
+                    <li>Global Variables have the entire script (and other scripits in the same HTML) and can be used anywhere, even within functions.</li>
+                    <li>Local Variables have a single function as their scope and can only be used within the function they are created in.</li>
+                </ul> 
+                <li>Assigning Value to Variables</li>  
+                <ul>
+                    <li>Use the = sign to assign a value to a variable like so: <code>var lines = 40;</code></li>
+                </ul>
+                <li>How to Increment and Decrement Variables</li>
+                <ul>
+                    <li>Use the += sign to add a number from a variable like so: <code>lines +=1;</code> or use ++ to add 1 to the variable like so: <code>lines++;</code> </li>
+                    <li>Use the -= sign to subtract a number from a variable like so: <code>lines -=1;</code> or use -- to subtract 1 to the variable like so: <code>lines--;</code> </li></li>
+                </ul>
+                <li>JavaScript Operators:</li>
+                <ul>
+                    <table class="w3-table">
+                        <tr>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Concatenate</td>
+                            <td><code>message="this is" = "a test";</code></td>
+                        </tr>
+                        <tr>
+                            <td>+</td>
+                            <td>Add</td>
+                            <td><code>result = 5+7;</code></td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>Subtract</td>
+                            <td><code>score=score-1;</code></td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Multiply</td>
+                            <td><code>total = quanitity * price;</code></td>
+                        </tr>
+                        <tr>
+                            <td>/</td>
+                            <td>Divide</td>
+                            <td><code>average = sum / 4;</code></td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Modulo</td>
+                            <td><code>remainder = sum % 4;</code></td>
+                        </tr>
+                        <tr>
+                            <td>++</td>
+                            <td>Increment</td>
+                            <td><code>tries++;</code></td>
+                        </tr>
+                        <tr>
+                            <td>--</td>
+                            <td>Decrement</td>
+                            <td><code>total--;</code></td>
+                        </tr>
+                    </table>
+                </ul>
+            </ul>
+        <li class="w3-container w3-lime">How to convert between different data types</li>
+            <ul class="w3-ul w3-border">
+                <li>JavaScript Data Types:</li>
+                <ul>
+                    <li>Number</li>
+                    <li>Boolean</li>
+                    <li>String</li>
+                    <li>Null</li>
+                </ul>
+            </ul>
+        <li class="w3-container w3-lime">How to create and use <code>String</code> objects</li>
+        <ul class="w3-ul w3-border">
+            <li>String Object: stores a group of text characters and are named similarly to other variables</li>
+        </ul>
+        <li class="w3-container w3-lime">How to create and use arrays of numbers and strings</li>
+        <ul class="w3-ul w3-border">
+            <li>Array: a numbered group of data items that you can treat as a single unit. An array can contain strings, numbers, objects, or other types of data.</li>
+        </ul>
+        <li class="w3-container w3-lime">How to define, call, and return values from functions</li>
+        <ul class="w3-ul w3-border">
+            <li>Function: A function is a group of JavaScript statements that can be treated as a single unit</li>
+            <li> To return a value from a function: begin with the function keyword, the function's name, and the parameters it accepts. Then use the return keyword along with the variable that the function created and end the code with a semicolon and closing curly braces.</li>
+        </ul>
+        <li class="w3-container w3-lime">How to use object properties and values</li>
+        <ul class="w3-ul w3-border">
+            <li>Object: an object is a more complex standalone entity that can store multiple properties (aka variables with values).</li>
+        </ul>
+        <li class="w3-container w3-lime">How to define and use object methods</li>
+        <li class="w3-container w3-lime">How to use the <code>Math</code> object's methods</li>
+        <ul class="w3-ul w3-border">
+            <li>Math Object: the Math object is a built in JavaScript object that includes math constants and functions.</li>
+            <li>How to Round and Truncate</li>
+            <ul>
+                <li>Math.ceil: rounds numbers up to the next integer</li>
+                <li>Math.floor: rounds numbers down to the next integer</li>
+                <li>Math.round: rounds number to the nearest integer</li>
+            </ul>
+            <li>How to generate a random number: use <br>
+                <code>function rand(num) {
+
+                return Math.floor(Math.random() * num) + 1;
+             
+             }</code></li>
+        </ul>
+        <li class="w3-container w3-lime">How to use <code>new</code> and <code>this</code> keywords to work with objects</li>
+        <li class="w3-container w3-lime">How to use the <code>Date</code> object to work with dates</li>
+        <ul class="w3-ul w3-border">
+            <li>Date: the Date object is a built-in JavaScript object that allows you to work with dates and times.</li>
+        </ul>
+    </ul>
+</main>
+</body>
+
+</html>

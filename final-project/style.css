@@ -1,0 +1,36 @@
+body{
+    margin:0 auto;
+    background-color:white; 
+    color:#0f0f0f;  
+    font-family:helvetica, sans-serif; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+hr{
+    height: 1px;
+    background-color:black;
+}
+
+@media screen and (max-width:750px){
+    body{
+        font-size:small;
+    }
+    .w3-card{
+        width: 410px;
+        padding:15px;
+    }
+}
+
+@media screen and (min-width:749px){
+    body{
+        font-size:large;
+    }
+    .w3-card{
+        width: 500px;
+        height: 500px;
+        padding: 20px;
+    }
+}

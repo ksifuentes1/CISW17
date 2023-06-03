@@ -1,0 +1,159 @@
+Karla Sifuentes
+Lesson 1 Notes
+February 25, 2023
+
+Lesson 1: Understanding How the Web Works
+    What You'll Learn in This Lesson: 
+        A very brief history of the World Wide Web
+            Sir Tim Berners-Lee - hypertext markup language (any language that can be linked to other object)
+        What is meant by the term web page and why this term doesn’t always reflect all the content involved
+            Files contain text that is marked up (surrounded) by HTML codes
+            Web content covers text, image, audio, video and other media online
+            CSS defines the look of the text
+            JavaScript tells browser how a page should interact with user
+        How content gets from your personal computer to someone else’s web browser
+            1. browser sends a request for index.html file
+            2. web server process looks in its directory contents for the file, opens it, and sends content back to web browser
+            3. browser receives content of index.html and renders the content based on html codes
+            4. browser looks at the src attribute in the <img> tag to find the source location
+            5. browser requests the file at the address mentioned
+            6. server interprests the request finds the file, and sends the content of the file to the web browser that requested it
+            7. web browser displays the image on your monitor
+            to view web content locally (hard drive) the trip is shorter
+                browser looks for files on your own computer hard drive rather than a remote machine
+        How to select a web hosting provider
+            reliability
+            customer service
+            server space
+            bandwidth
+            domain name purchase and management
+            price
+        How different web browsers and device types can affect your content
+            test with multiple web browsers and devices
+        How to transfer files to your web server by using FTP
+            File Transfer Protocol require three pieces of info to put your web content on a web server so other can see
+                1. the hostmname or addresss to which you will connect
+                2. your username
+                3. your password
+            Choosing a ftp client 
+        Where files should be placed on a web server
+            document root - trailing slash in the full URL (the starting point of the directory structure your create on web server)
+                this is the place where the web server begins looking for files request by web browser
+                always navigate to the document root of your web server before transferring files
+                change the default starting directory to your docuemnt root just in case 
+                you can also use images, zip files, spreadsheets, etc in the directory  
+            index.html file is the name you give to the page you want people to see as the default file when they navigate to a directory on your site
+                without an index. html the results would depend on web server configuration (allow directory browsing)
+                first page of your website should be named index.html
+        How to distribute web content without a web server
+            local sites 
+                browser directory
+                content directory
+        How to use other publishing methods, such as blogs
+            blogs hosted by a third party offer visual editors in addition to source editors
+        Tips for testing the appearance and functionality of web content
+            1. before transferring files, test them locally on your machine. test again.
+            2. test with many browsers and devices
+            3. turn off auto image loading in web browser 
+            4. use browsers font size settings to look at each page in various font sizes
+            5. wait for page to finish loading then scroll to the bottom to make sure images appear 
+            6. time how lon git takes each page to load 
+
+Lesson 2: Structuring an HTML Document
+    What You'll Learn in This Lesson: 
+        How to create a simple web page in HTML
+            always use .html in the name when using html tags
+            Every webpage must include: <!doctype>, <html></html>, <head></head>, <title></title>, and <body></body>
+            words within <> are called tags
+            use <!DOCTYPE> to declare that it is HTML
+        How to include all the HTML tags that every web page must have
+            Declaration: <!doctype html>
+            opening tag <>
+            closing tag </>
+            empty tag <> has no closing tag with /
+            language attribute (lang) en for english
+            <title> and </title> identifies the page on the browser's Bookmarks or Favorites 
+            <meta charset= "utf-8"> should come right after opening tag <head> to protect from hackers
+                this tag defines the character set the page will be written in 
+            <body>, <title>, <html>, and <head> are required
+            <head> describes the page but isn't displayed by web browser. out after <html> tag
+            create a skeleton or template page with doctype, html, head, title, and body tags
+            <p> encloses paragraph of text
+        How to organize a page with paragraphs and line breaks
+            line and paragraph breaks appear only when there are <br> (empty tag) and <p> </p> tags
+            <hr> (empty tag) horizontal line
+        How to organize your content with headings
+            <h1> </h1> heading tag, should follow content hierarchy
+            <title> gives the page an identifying name displayed on browser title bar and Bookmarks
+                there can only be one title per page, within the <head> tags
+            <head> tags are displayed on the page
+            NOTE: anything placed in the head of a webpage is not intended to be viewed on the page, whereas everything in the body IS intendended for viewing
+        How to use the semantic elements of HTML5
+            Semantic elements provide additional meaning 
+            <header> </header> contains introdcutory information
+            <footer> </footer> 
+            <nav> </nav> includes navigational elements, typically found in the first instance of header tag
+            <section> </section> anything that relates thematically, conveys a relationship between the content elements it contains
+            <article> </article> standalone body of work, <section> is a thematic grouping of information
+            <aside> </aside> sidebar, either for all content on page or for an article or other thematic container   
+        How to use semantic tags to indicate header and footer content
+            <header> does not have to come on top of page
+            <section> thematic grouping of content
+            <article> any standalone body of work
+            Does this content make sense on its own?- Article
+            <footer> can contain an <address> but an <address> cannot contain <footer>
+        How to use semantic tags to indicate navigational and secondary content
+            use <nav> if your site has any navigational elements
+            <aside> contains any content that is tangentially related to the content around it 
+                think: is the content directly related to the aside content?
+        How to use semantic tags to better structure body content
+            A semantic element is an HTML element that describes th emeaning of information contained in that element
+
+    Every HTML page requires:
+        <html> </html>
+        <head> </head>
+        <title> </title>
+        <body> </body>
+        <!doctype html>
+        <meta charset>
+    HTML Tags:
+        <html> </html>
+        <head> </head>
+        <meta charset ="utf-8">
+        <title> </title>
+        <body> </body>
+        <p> </p>
+        <br>
+        <hr>
+        <h1> </h1>
+        <h2> </h2>
+        <h3> </h3>
+        <h4> </h4>
+        <h5> </h5>
+        <h6> </h6>
+        <header> </header>
+        <footer> </footer>
+        <nav> </nav>
+        <section> </section>
+        <articel> </article>
+        <aside> </aside>
+        <address> </address>
+
+Lesson 1 covered a brief history of HTML and some background information to understand how a website is developed and rendered on a browser. While it takes
+than HTML markups to structure the website, CSS and JavaScript come into play to create more complex, visually appealing sites. The author also details the process
+of transferring web content from a server to a browser, which involves requesting, retrieving, and displaying the content on a screen. You also need to choose a web 
+host provider to transfer files (via an FTP client) to show your content on a browser. However, you can also display information locally, on a drive, but only you will 
+be able to view your intricate creation. Another important thing to mention is the use of index files, which is the name you give the page you want people to see as the
+default. Finally, the author underscored the importance of checking and double checking your work on multiple browsers and devices to ensure that the page looks ok for 
+all visitors. 
+
+Lesson 2 covered the basics of HTML tags, from the required tags meant to define or declare the page, to semantic tags that are not strictly required, but
+add meaning to your page on the back end. Regardless of the tags you use, it is important to differentiate between different types of tags. For example, the
+opening tag is used where text begins, a closing tag marks the end of the text, and an empty tag is a single tag that does not enclose any text, such as the 
+<meta> tag, which defines the character set of the page. Required tags include <html>, <head>, <body>, and <title> tag pairs, and the author recommends creating
+a template or skeleton page with all the required tags as a starting point before working on a new HTML document. The author mentions a few extra helpful tags,
+such as the <p>, <br> and <hr> which help format and visiually break up text. Using the heading tags to meaningfully organize your page with a content hierarchy
+is emphasized, so that you do not rely on these tags to simply visualize different text sizes. Finally, the author mentions a few semantic tags that help provide
+meaning to the text in your page. These are used to structure your page on the back end (browsers will assign no meaning to the text, but can be helpful for you 
+or others reading/editing your page on the back end). Overall, it is important to know these basics and stay organized to save you trouble when it comes to editing 
+your website.  

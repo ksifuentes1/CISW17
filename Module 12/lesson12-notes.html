@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title> Lesson 12 Notes </title>
+    <!--
+    Karla Sifuentes
+    Assignment: Lesson 12 Notes
+    May 14, 2023
+    -->
+    <style>
+        body{
+        margin:0 auto;
+        background-color:white; 
+        color:#0f0f0f;  
+        font-family:helvetica, sans-serif; 
+        font-size: medium;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        max-width:75%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        @media screen and (min-width:750px) {
+            h2{font-size:3.75em;}
+            h3{font-size: 2em;}
+        }
+        @media screen and (max-width:749px){
+            body{
+                line-height:1.2em;
+            }
+            h2{
+                line-height:1em;
+                font-size:2.5em;}
+            }
+            h3{
+                line-height:1em;
+                font-size:1.75em;
+            }
+    </style>
+</head>
+
+<body> 
+    <h2 class="w3-center w3-container w3-blue">JavaScript Best Practices</h2>
+    <p class="w3-container">This lesson introduced the importance of using JavaScript carefully and intentionally. We learned some of the best practices for using JavaScript which, ironically, involves using JavaScript as little as possible and ensuring that you don’t interfere with the accessibility of the content on your page. For example, by separating the content, presentation, and behavior of your webpage into three different files, you are better able to maintain a large site, reuse the same files for multiple pages of a site, and play each language to its strengths. JavaScript can take up a lot of space for browsers and not all will support JavaScript, so it is important to comply with web standards so that your site is not penalized or difficult to find. </p>
+    <p class="w3-container">To know more information about a user’s browser, we learned how to read and display browser information using the <code>navigation</code> object and then based on the features that each browser can support, we learned to use feature sensing to customize what is shown depending on the browser’s capabilities. This helps us avoid errors and create unobtrusive script. Finally, we learned some options for supporting older browser versions and even browsers that don’t support JavaScript at all by displaying a message or simply keeping JavaScript optional at all times. The lesson also covered an excellent example of an unobtrusive script where the page is always functional, even if JavaScript is not supported.</p>
+    <ul class="w3-ul w3-border">
+        <li style="font-size:larger">What You'll Learn in This Lesson</li>
+        <li class="w3-container">Best practices for creating unobtrusive scripts</li>
+        <li class="w3-container">The importance of separating content, presentation, and behavior</li>
+        <li class="w3-container">The importance of following web standards to create cross-browser scripts</li>
+        <li class="w3-container">How to read and display browser information</li>
+        <li class="w3-container">How to use feature sensing to avoid errors</li>
+        <li class="w3-container">How to support older, less compliant browser versions</li>
+        <li class="w3-container">How to support non-JavaScript browsers</li>
+    </ul>
+    <h3 class="w3-center w3-container w3-blue">Reflection on the Lesson</h3>
+    <p>The lessons we learned in this chapter emphasized the importance of using JavaScript carefully and intentionally, not only so our webpages can be easier to manage, but so that all your content can be accessible. Not all browsers support JavaScript and even those that do may have JavaScript disabled. As a result, not everyone will be able to interact with your sites the way you can. By using JavaScript as little as possible, keeping your JavaScript file separately, and following broad web standards, we can ensure that most people can at least access the information on our page. This lesson was extremely important in getting us to think about the user’s point of view at all times and to get creative when balancing functionality and presentation.</p>
+    <br width="25px">
+    <hr>
+    <br width="25px">
+    <h2 class="w3-center w3-container w3-blue">Using Third-Party JavaScript Libraries and Functions</h2>
+    <p>This lesson introduced third party libraries and frameworks for JavaScript code, which may lighten the load for developers. Although there are a few objections, in general third party libraries enable you to save time and energy, become more efficient, and ensure that your script will work on several browsers and different versions. The lesson listed a few common libraries such as jQuery and Prototype that help simplify tasks so you don’t have to reinvent the wheel every time. We learned the best ways to include this code to our websites, by using <script> tags </script>to reference the code and putting it near the end of our HTML doc so that the webpage loads first.</p>
+    <p>Then, the lesson introduced frameworks, which are more complex and larger, mostly meant to establish an architectural pattern on an application. We learned the three components of an application: the model, view, and controller, which allow the user more control when interacting with the page. The work to code these applications can be grueling and tedious, which is why the lesson recommended a few frameworks to handle some of that work for you. While it is important to try to understand what you are coding, especially as a beginner, taking advantage of helpful tools like libraries and frameworks is nonetheless a smart move.</p>
+    <ul class="w3-ul w3-border">
+        <li style="font-size:larger">What You'll Learn in This Lesson</li>
+        <li class="w3-container">Why you might use a third-party JavaScript library or framework</li>
+        <li class="w3-container">The differences between libraries and frameworks</li>
+        <li class="w3-container">How and when you might use Angular, jQuery, React, and other third-party libraries</li>
+        <li class="w3-container">How to download and use a popular third-party JavaScript library in your applications</li>
+        <li class="w3-container">The benefits of JavaScript frameworks</li>
+    </ul>
+    <h3 class="w3-center w3-container w3-blue">Reflection on the Lesson</h3>
+    <p>Third party script libraries and frameworks can be an extremely useful asset, especially for larger, more complex projects. They provide basic functionality and shortcuts so you can get complete pages or applications much quicker and focus on the more important aspects of your page, such as the user interface and designing the experience. I am grateful that the book covered this lesson, not to replace all our existing knowledge of JavaScript, but to supplement it so that we could become more efficient developers and use the various tools available to continue to improve.</p>
+
+</body>
+
+</html>
